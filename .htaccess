@@ -1,0 +1,18 @@
+ServerSignature Off
+
+# set the server administrator email
+#SetEnv SERVER_ADMIN email-server gose here
+
+
+# multiple file types
+<FilesMatch ".(htaccess|htpasswd|ini|phps|fla|psd|log|sh|txt)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+ErrorDocument 404 /2022vtu/404.php

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Dashboard Online Doctor Appointment App</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href="images/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="css/colors.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="css/custom.css" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body class="dashboard dashboard_1">
+      <div class="full_container">
+         <div class="inner_container">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+               
+               <div class="sidebar_blog_2">
+                  <h4>Menus</h4>
+                  <ul class="list-unstyled components">
+                     
+                     <li><a href="index.html"><i class="fa fa-dashboard yellow_color"></i> <span>Homepage</span></a></li>
+                     
+                     <li><a href="patient_reg.html"><i class="fa fa-user purple_color2"></i> <span>Patient Sign Up</span></a></li>
+                     
+                     <li><a href="login.html" data-target="#doctorlogin" data-toggle="modal"><i class="fa fa-sign-out green_color"></i> <span>Doctor Login</span></a></li>
+
+                     <li><a href="#addfeedback" data-target="#addfeedback" data-toggle="modal"><i class="fa fa-comment yellow_color"></i> <span>Feedback</span></a></li>
+                  </ul>
+               </div>
+            </nav>
+            <!-- end sidebar -->
+
+            <!-- right content -->
+            <div id="content">
+               <!-- topbar -->
+               <div class="topbar">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                     <div class="full">
+                        <div class="right_topbar">
+                           <div class="icon_info">
+                              <ul>
+                                 <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge"></span></a></li>
+                                 <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge"></span></a></li>
+                              </ul>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
+               <!-- end topbar -->
+
+               <!-- dashboard inner -->
+               <div class="midde_cont">
+                  <div class="container-fluid">
+                     <div class="row column_title">
+                        <div class="col-md-12">
+                           <div class="page_title">
+                              <h2>Online Doctor Appointment Management System <i class="fa fa-calendar-o blue_color text-blue"></i></h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row column1">
+                        
+                        <!-- table section -->
+                        <div class="col-md-12">
+                            <div class="white_shd full margin_bottom_30">
+                               <div class="full graph_head">
+                                  <div class="heading1 margin_0">
+                                     <h2> <a href="#adddoctor" data-target="#adddoctor" data-toggle="modal" style="color:green;" class="small-box-footer"><i class="fa fa-list blue_color text-blue"></i> Doctor Schedule List</a></h2>
+                                  </div>
+                                  
+                               </div>
+                               
+                               <div class="table_section padding_infor_info">
+                                  <div class="table-responsive-sm"><b>Doctor List</b>
+                                     <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                           <tr>
+                                              <th>#</th>
+                                              <th>Doctor Name</th>
+                                              <th>Education</th>
+                                              <th>Speciality</th>
+                                              <th>Appointment Date</th>
+                                              <th>Appointment Day</th>
+                                              <th>Available Time</th>
+                                              <th>Action</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                              <td>1</td>
+                                              <td>Dr Chike</td>
+                                              <td>MBBS MD</td>
+                                              <td>Neurologist</td>
+                                              <td>8-04-2022</td>
+                                              <td>Monday</td>
+                                              <td>12:00pm</td>
+                                              <td><a href="login.html"  style="color:white;"  class="small-box-footer badge bg-success">Get Appointment</a>
+                                            </td>
+                                           </tr>
+                                           <tr>
+                                            <td>2</td>
+                                            <td>Dr Luke</td>
+                                             <td>MBBS MS</td>
+                                             <td>Dentist</td>
+                                             <td>21-06-2022</td>
+                                             <td>Friday</td>
+                                            <td>8:25am</td>
+                                            <td><a href="login.html"  style="color:white;"  class="small-box-footer badge bg-success">Get Appointment</a>
+                                            </td>
+                                         </tr>
+                                        </tbody>
+                                     </table>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+
+                     </div>
+                     
+                     
+ <div id="addfeedback" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+   <div class="modal-dialog">
+     <div class="modal-content" style="height:auto">
+               <div class="modal-header"><h3 style="font-family:san-serif; color:rgb(174, 240, 174);">Add Feedback</h3>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">×</span></button>
+                 <h4 class="modal-title"></h4>
+               </div>
+               <div class="modal-body">
+         <form class="form-horizontal" method="post" action="" enctype='multipart/form-data'>
+         <div class="form-group">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Patient Email Address</label>
+                <input type="email" class="form-control" name="users" id="exampleFormControlTextarea1" rows="3">
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Patient Complete Address</label>
+                <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+             </div>
+         </div>
+               <div class="modal-footer">
+     <button type="submit" name="del" class="btn btn-primary"><i class="fa fa-plus white_color text-blue"></i>  Add Comment</button>
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+         </form>
+             </div>
+       
+         </div><!--end of modal-dialog-->
+  </div>
+  <!--end of modal--> 
+
+
+                      
+ <div id="adminlogin" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+   <div class="modal-dialog">
+     <div class="modal-content" style="height:auto">
+      <form class="form-horizontal" method="post" action="admin_dashboard.html" enctype='multipart/form-data'>
+               <div class="modal-header"><h3 style="font-family:san-serif; color:rgb(174, 240, 174);">Admin Login</h3>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">×</span></button>
+                 <h4 class="modal-title"></h4>
+               </div>
+               
+               <div class="login_form">
+                  <div class="form-group">
+                     <div class="mb-3">
+                         <label for="exampleFormControlTextarea1" class="form-label">Admin Email Address</label>
+                         <input type="email" class="form-control" name="users" id="exampleFormControlTextarea1" rows="3">
+                       </div>
+                     <div class="mb-3">
+                         <label for="exampleFormControlTextarea1" class="form-label">Admin Password</label>
+                         <input type="password" class="form-control" name="pass" id="exampleFormControlTextarea1" rows="3">
+                       </div>
+                      </div>
+               </div>
+               <div class="modal-footer">
+     <button type="submit" name="del" class="btn btn-primary"><i class="fa fa-sign-out white_color text-blue"></i>  Login</button>
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+         </form>
+             </div>
+       
+         </div><!--end of modal-dialog-->
+  </div>
+  <!--end of modal--> 
+
+
+                      
+  <div id="doctorlogin" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+   <div class="modal-dialog">
+     <div class="modal-content" style="height:auto">
+      <form class="form-horizontal" method="post" action="doctor_dashboard.html" enctype='multipart/form-data'>
+               <div class="modal-header"><h3 style="font-family:san-serif; color:rgb(174, 240, 174);">Doctor Login</h3>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">×</span></button>
+                 <h4 class="modal-title"></h4>
+               </div>
+               <div class="login_form">
+                  <div class="form-group">
+                     <div class="mb-3">
+                         <label for="exampleFormControlTextarea1" class="form-label">Doctor Email Address</label>
+                         <input type="email" class="form-control" name="users" id="exampleFormControlTextarea1" rows="3">
+                       </div>
+                     <div class="mb-3">
+                         <label for="exampleFormControlTextarea1" class="form-label">Doctor Password</label>
+                         <input type="password" class="form-control" name="pass" id="exampleFormControlTextarea1" rows="3">
+                       </div>
+                      </div>
+               </div>
+               <div class="modal-footer">
+     <button type="submit" name="del" class="btn btn-primary"><i class="fa fa-sign-out white_color text-blue"></i>  Login</button>
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+         </form>
+             </div>
+       
+         </div><!--end of modal-dialog-->
+  </div>
+  <!--end of modal--> 
+ 
+                     
+                  </div>
+                  <!-- footer -->
+                  <div class="container-fluid">
+                     <div class="footer">
+                        <p>Copyright © 2022 All rights reserved.<br><br>
+                           
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- end dashboard inner -->
+            </div>
+         </div>
+      </div>
+      <!-- jQuery -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="js/animate.js"></script>
+      <!-- select country -->
+      <script src="js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="js/owl.carousel.js"></script> 
+      <!-- chart js -->
+      <script src="js/Chart.min.js"></script>
+      <script src="js/Chart.bundle.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <script src="js/chart_custom_style1.js"></script>
+
+      <script>
+        $(function() {
+            $("#example1").DataTable({
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+        </script>
+   </body>
+</html>
